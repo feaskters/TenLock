@@ -12,6 +12,10 @@
 		F735F83F221D434F006A0F76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735F83D221D434F006A0F76 /* Main.storyboard */; };
 		F735F841221D4351006A0F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F735F840221D4351006A0F76 /* Assets.xcassets */; };
 		F735F844221D4351006A0F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735F842221D4351006A0F76 /* LaunchScreen.storyboard */; };
+		F735F84E221D4EB1006A0F76 /* GameSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735F84C221D4EB1006A0F76 /* GameSelectorViewController.swift */; };
+		F735F84F221D4EB1006A0F76 /* GameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735F84D221D4EB1006A0F76 /* GameSelectorViewController.xib */; };
+		F735F851221D5359006A0F76 /* CheckPointButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735F850221D5359006A0F76 /* CheckPointButton.swift */; };
+		F735F853221D5365006A0F76 /* CheckPointButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735F852221D5365006A0F76 /* CheckPointButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F735F840221D4351006A0F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F735F843221D4351006A0F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F735F845221D4351006A0F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F735F84C221D4EB1006A0F76 /* GameSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectorViewController.swift; sourceTree = "<group>"; };
+		F735F84D221D4EB1006A0F76 /* GameSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameSelectorViewController.xib; sourceTree = "<group>"; };
+		F735F850221D5359006A0F76 /* CheckPointButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPointButton.swift; sourceTree = "<group>"; };
+		F735F852221D5365006A0F76 /* CheckPointButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckPointButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		F735F838221D434F006A0F76 /* TenLock */ = {
 			isa = PBXGroup;
 			children = (
+				F735F84B221D4D18006A0F76 /* GameSelector */,
 				F735F839221D434F006A0F76 /* AppDelegate.swift */,
 				F735F83B221D434F006A0F76 /* ViewController.swift */,
 				F735F83D221D434F006A0F76 /* Main.storyboard */,
@@ -62,6 +71,17 @@
 				F735F845221D4351006A0F76 /* Info.plist */,
 			);
 			path = TenLock;
+			sourceTree = "<group>";
+		};
+		F735F84B221D4D18006A0F76 /* GameSelector */ = {
+			isa = PBXGroup;
+			children = (
+				F735F84C221D4EB1006A0F76 /* GameSelectorViewController.swift */,
+				F735F84D221D4EB1006A0F76 /* GameSelectorViewController.xib */,
+				F735F850221D5359006A0F76 /* CheckPointButton.swift */,
+				F735F852221D5365006A0F76 /* CheckPointButton.xib */,
+			);
+			path = GameSelector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F735F844221D4351006A0F76 /* LaunchScreen.storyboard in Resources */,
+				F735F84F221D4EB1006A0F76 /* GameSelectorViewController.xib in Resources */,
 				F735F841221D4351006A0F76 /* Assets.xcassets in Resources */,
+				F735F853221D5365006A0F76 /* CheckPointButton.xib in Resources */,
 				F735F83F221D434F006A0F76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F735F83C221D434F006A0F76 /* ViewController.swift in Sources */,
+				F735F851221D5359006A0F76 /* CheckPointButton.swift in Sources */,
+				F735F84E221D4EB1006A0F76 /* GameSelectorViewController.swift in Sources */,
 				F735F83A221D434F006A0F76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JU9D5RL7J;
 				INFOPLIST_FILE = TenLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zmh.TenLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JU9D5RL7J;
 				INFOPLIST_FILE = TenLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zmh.TenLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
