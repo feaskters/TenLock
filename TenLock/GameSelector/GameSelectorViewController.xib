@@ -21,37 +21,36 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景" translatesAutoresizingMaskIntoConstraints="NO" id="8J7-x8-uxq">
+                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_selector" translatesAutoresizingMaskIntoConstraints="NO" id="8J7-x8-uxq">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCh-6B-g3y">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCh-6B-g3y">
                     <rect key="frame" x="10" y="30" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="0Uo-OC-BZH"/>
                         <constraint firstAttribute="width" constant="50" id="wHk-KS-1cq"/>
                     </constraints>
-                    <state key="normal" title="⬅️"/>
+                    <state key="normal" image="back"/>
                     <connections>
                         <action selector="back:" destination="-1" eventType="touchUpInside" id="UX3-aj-172"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level Select" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjw-Iw-SbA">
-                    <rect key="frame" x="104.5" y="30" width="166" height="50"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjw-Iw-SbA">
+                    <rect key="frame" x="87" y="50" width="201" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Mxv-Mg-yP7"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="32"/>
+                    <color key="textColor" red="0.86274509799999999" green="0.60784313729999995" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRb-Nv-sfN">
                     <rect key="frame" x="30" y="130" width="315" height="337"/>
-                    <color key="backgroundColor" red="0.96327052660000001" green="0.55213916910000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="tjw-Iw-SbA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="4AD-fL-JBr"/>
+                <constraint firstItem="tjw-Iw-SbA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="4AD-fL-JBr"/>
                 <constraint firstAttribute="bottom" secondItem="8J7-x8-uxq" secondAttribute="bottom" id="9RI-QP-3Gx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DRb-Nv-sfN" secondAttribute="trailing" constant="30" id="KnT-Ie-PDA"/>
                 <constraint firstItem="GCh-6B-g3y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="U5C-V7-Ys6"/>
@@ -69,6 +68,7 @@
         </view>
     </objects>
     <resources>
-        <image name="背景" width="454" height="340"/>
+        <image name="back" width="67" height="66"/>
+        <image name="background_selector" width="800" height="600"/>
     </resources>
 </document>

@@ -18,49 +18,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景" translatesAutoresizingMaskIntoConstraints="NO" id="2Ny-W0-k9H">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="2Ny-W0-k9H">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="标题" translatesAutoresizingMaskIntoConstraints="NO" id="R6x-A9-bJj">
-                                <rect key="frame" x="67.5" y="140" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="L41-nj-n1g"/>
-                                    <constraint firstAttribute="width" constant="240" id="opm-V6-iER"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p6-HD-bH3">
-                                <rect key="frame" x="122.5" y="368" width="130" height="51"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="开始游戏"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p6-HD-bH3">
+                                <rect key="frame" x="84" y="368" width="207" height="74"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <state key="normal" title="START" backgroundImage="button">
+                                    <color key="titleColor" red="0.0039215686274509803" green="0.30196078431372547" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="button_click"/>
                                 <connections>
                                     <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4vw-Kc-GIg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wg3-f0-Av2">
-                                <rect key="frame" x="163" y="469" width="49" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="设置"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wg3-f0-Av2">
+                                <rect key="frame" x="112.5" y="492" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Rc8-zr-94N"/>
+                                    <constraint firstAttribute="height" constant="50" id="el6-DM-U4C"/>
+                                </constraints>
+                                <state key="normal" image="unmute"/>
                                 <connections>
                                     <action selector="setting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UOn-Zt-EDM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ten Lock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geP-pL-GKv">
+                                <rect key="frame" x="72.5" y="140" width="230" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Swk-RF-jCn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="62"/>
+                                <color key="textColor" red="0.86274509803921573" green="0.60784313725490191" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUL-nT-NVk">
+                                <rect key="frame" x="212.5" y="492" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3EI-47-bQU"/>
+                                    <constraint firstAttribute="height" constant="50" id="Fcr-8o-1a2"/>
+                                </constraints>
+                                <state key="normal" image="tip"/>
+                                <connections>
+                                    <action selector="tip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Zy-ZQ-KVF"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="9p6-HD-bH3" firstAttribute="top" secondItem="geP-pL-GKv" secondAttribute="bottom" constant="100" id="5Az-yp-kvA"/>
+                            <constraint firstItem="qUL-nT-NVk" firstAttribute="centerY" secondItem="wg3-f0-Av2" secondAttribute="centerY" id="7MO-jw-TWH"/>
                             <constraint firstItem="2Ny-W0-k9H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CT8-V5-Mc2"/>
                             <constraint firstAttribute="bottom" secondItem="2Ny-W0-k9H" secondAttribute="bottom" id="K4n-ex-hOv"/>
                             <constraint firstItem="wg3-f0-Av2" firstAttribute="top" secondItem="9p6-HD-bH3" secondAttribute="bottom" constant="50" id="Mv1-8l-OV6"/>
+                            <constraint firstItem="geP-pL-GKv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aS1-ey-HFn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Ny-W0-k9H" secondAttribute="trailing" id="bPA-VC-QKZ"/>
-                            <constraint firstItem="9p6-HD-bH3" firstAttribute="top" secondItem="R6x-A9-bJj" secondAttribute="bottom" constant="100" id="gO0-vu-gL1"/>
                             <constraint firstItem="9p6-HD-bH3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q9A-6z-CUY"/>
                             <constraint firstItem="2Ny-W0-k9H" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qZM-XB-IIy"/>
-                            <constraint firstItem="R6x-A9-bJj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qtw-8T-NmB"/>
-                            <constraint firstItem="wg3-f0-Av2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="slx-80-1ZX"/>
-                            <constraint firstItem="R6x-A9-bJj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="uMn-nb-hUg"/>
+                            <constraint firstItem="geP-pL-GKv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="qna-iF-xi7"/>
+                            <constraint firstItem="wg3-f0-Av2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="slx-80-1ZX"/>
+                            <constraint firstItem="qUL-nT-NVk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="50" id="wRA-gb-yOF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="music_btn" destination="wg3-f0-Av2" id="cCB-yq-l7C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,7 +92,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="标题" width="454" height="340"/>
-        <image name="背景" width="454" height="340"/>
+        <image name="background" width="1024" height="600"/>
+        <image name="button" width="207" height="74"/>
+        <image name="button_click" width="207" height="74"/>
+        <image name="tip" width="92" height="94"/>
+        <image name="unmute" width="92" height="94"/>
     </resources>
 </document>
