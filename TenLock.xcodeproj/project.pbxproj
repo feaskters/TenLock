@@ -22,6 +22,7 @@
 		F735F84E221D4EB1006A0F76 /* GameSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735F84C221D4EB1006A0F76 /* GameSelectorViewController.swift */; };
 		F735F84F221D4EB1006A0F76 /* GameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735F84D221D4EB1006A0F76 /* GameSelectorViewController.xib */; };
 		F735F851221D5359006A0F76 /* CheckPointButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735F850221D5359006A0F76 /* CheckPointButton.swift */; };
+		F74484D1221FCF0400062BDB /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74484D0221FCF0400062BDB /* GameOverView.swift */; };
 		F7E5E62D221EA2E8007E1DBB /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E5E62C221EA2E8007E1DBB /* BallView.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		F735F84C221D4EB1006A0F76 /* GameSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectorViewController.swift; sourceTree = "<group>"; };
 		F735F84D221D4EB1006A0F76 /* GameSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameSelectorViewController.xib; sourceTree = "<group>"; };
 		F735F850221D5359006A0F76 /* CheckPointButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPointButton.swift; sourceTree = "<group>"; };
+		F74484D0221FCF0400062BDB /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		F7E5E62C221EA2E8007E1DBB /* BallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				F71EB3FB221E78CD00EE8878 /* GameViewController.swift */,
 				F71EB3FC221E78CD00EE8878 /* GameViewController.xib */,
 				F7E5E62C221EA2E8007E1DBB /* BallView.swift */,
+				F74484D0221FCF0400062BDB /* GameOverView.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				F735F84E221D4EB1006A0F76 /* GameSelectorViewController.swift in Sources */,
 				F71EB3FD221E78CD00EE8878 /* GameViewController.swift in Sources */,
 				F735F83A221D434F006A0F76 /* AppDelegate.swift in Sources */,
+				F74484D1221FCF0400062BDB /* GameOverView.swift in Sources */,
 				F7E5E62D221EA2E8007E1DBB /* BallView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

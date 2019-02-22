@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSArray *checkPointsArray;
 +(instancetype)sharedCheckpoints;
-
+-(void)successWithLevel:(int)level;
 @end
 
 NS_ASSUME_NONNULL_END

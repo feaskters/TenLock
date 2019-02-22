@@ -40,6 +40,11 @@ class CheckPointButton: UIButton {
         self.addTarget(self, action: #selector(self.click(sender:)), for: UIControl.Event.touchUpInside)
     }
     
+    //设置是否可点击
+    func setEnable(enable: Bool) {
+        self.isEnabled = enable
+    }
+    
     //点击事件
     @objc func click(sender:UIButton) {
         Music.shared().musicPlayEffective()

@@ -30,9 +30,9 @@ static Checkpoints *_instanceCheckpoint;
         
         NSError *error ;
         if ([fileManager copyItemAtPath:sourcesPath toPath:path error:&error]) {
-            NSLog(@"移动成功");
+//            NSLog(@"移动成功");
         } else {
-            NSLog(@"移动失败");
+//            NSLog(@"移动失败");
         }
     }
     
@@ -53,6 +53,21 @@ static Checkpoints *_instanceCheckpoint;
         [exc raise];
     }
     return [super alloc];
+}
+
+//关卡成功，修改plist
+-(void)successWithLevel:(int)level{
+    if (level < _instanceCheckpoint.checkPointsArray.count) {
+        NSMutableArray *array = [[NSMutableArray alloc]initWithArray: _instanceCheckpoint.checkPointsArray copyItems:YES];
+        NSMutableDictionary *dic = [[NSMutableDictionary alloc]initWithDictionary:array[level]];
+        dic[@"enable"] = @YES;
+        array[level] = dic;
+        _instanceCheckpoint.checkPointsArray = array;
+        //写入沙盒
+        NSString *doc = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+        NSString *path = [doc stringByAppendingString:@"/CheckPoints.plist"];
+        [_instanceCheckpoint.checkPointsArray writeToFile:path atomically:YES];
+    }
 }
 
 
