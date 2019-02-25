@@ -115,7 +115,7 @@
 	</dict>
 	<dict>
 		<key>enable</key>
-		<true/>
+		<false/>
 		<key>balls_select</key>
 		<array>
 			<integer>1</integer>
@@ -198,7 +198,7 @@
 	</dict>
 	<dict>
 		<key>enable</key>
-		<true/>
+		<false/>
 		<key>balls_select</key>
 		<array>
 			<integer>1</integer>
@@ -280,14 +280,14 @@
 	</dict>
 	<dict>
 		<key>enable</key>
-		<true/>
+		<false/>
 		<key>balls_select</key>
 		<array>
-			<integer>1</integer>
-			<integer>3</integer>
+			<integer>2</integer>
 			<integer>5</integer>
-			<integer>7</integer>
-			<integer>8</integer>
+			<integer>3</integer>
+			<integer>1</integer>
+			<integer>9</integer>
 		</array>
 		<key>balls</key>
 		<array>
@@ -300,7 +300,7 @@
 					<string>0.2</string>
 				</dict>
 				<key>number</key>
-				<integer>2</integer>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>position</key>
@@ -322,7 +322,7 @@
 					<string>0.8</string>
 				</dict>
 				<key>number</key>
-				<integer>3</integer>
+				<integer>2</integer>
 			</dict>
 			<dict>
 				<key>position</key>
@@ -333,7 +333,7 @@
 					<string>0.5</string>
 				</dict>
 				<key>number</key>
-				<integer>1</integer>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>position</key>
@@ -344,7 +344,7 @@
 					<string>0.5</string>
 				</dict>
 				<key>number</key>
-				<integer>4</integer>
+				<integer>6</integer>
 			</dict>
 		</array>
 		<key>lines</key>
@@ -363,13 +363,13 @@
 	</dict>
 	<dict>
 		<key>enable</key>
-		<true/>
+		<false/>
 		<key>balls_select</key>
 		<array>
-			<integer>1</integer>
+			<integer>2</integer>
+			<integer>9</integer>
 			<integer>3</integer>
-			<integer>5</integer>
-			<integer>7</integer>
+			<integer>1</integer>
 			<integer>8</integer>
 		</array>
 		<key>balls</key>
@@ -383,7 +383,7 @@
 					<string>0.2</string>
 				</dict>
 				<key>number</key>
-				<integer>2</integer>
+				<integer>3</integer>
 			</dict>
 			<dict>
 				<key>position</key>
@@ -405,7 +405,104 @@
 					<string>0.8</string>
 				</dict>
 				<key>number</key>
+				<integer>4</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.0</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.25</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>4</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.75</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>1</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+		<key>lines</key>
+		<array>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+			<array>
 				<integer>3</integer>
+				<integer>1</integer>
+				<integer>4</integer>
+				<integer>6</integer>
+				<integer>5</integer>
+			</array>
+		</array>
+	</dict>
+	<dict>
+		<key>enable</key>
+		<false/>
+		<key>balls_select</key>
+		<array>
+			<integer>1</integer>
+			<integer>3</integer>
+			<integer>5</integer>
+			<integer>4</integer>
+			<integer>8</integer>
+			<integer>9</integer>
+		</array>
+		<key>balls</key>
+		<array>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.2</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.8</string>
+				</dict>
+				<key>number</key>
+				<integer>1</integer>
 			</dict>
 			<dict>
 				<key>position</key>
@@ -416,7 +513,7 @@
 					<string>0.5</string>
 				</dict>
 				<key>number</key>
-				<integer>1</integer>
+				<integer>3</integer>
 			</dict>
 			<dict>
 				<key>position</key>
@@ -427,7 +524,7 @@
 					<string>0.5</string>
 				</dict>
 				<key>number</key>
-				<integer>4</integer>
+				<integer>2</integer>
 			</dict>
 		</array>
 		<key>lines</key>
@@ -436,6 +533,86 @@
 				<integer>0</integer>
 				<integer>1</integer>
 				<integer>2</integer>
+				<integer>3</integer>
+			</array>
+		</array>
+	</dict>
+	<dict>
+		<key>enable</key>
+		<false/>
+		<key>balls_select</key>
+		<array>
+			<integer>1</integer>
+			<integer>2</integer>
+			<integer>5</integer>
+			<integer>6</integer>
+			<integer>8</integer>
+		</array>
+		<key>balls</key>
+		<array>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.2</string>
+				</dict>
+				<key>number</key>
+				<integer>5</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.8</string>
+				</dict>
+				<key>number</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.1</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.9</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>2</integer>
+			</dict>
+		</array>
+		<key>lines</key>
+		<array>
+			<array>
+				<integer>0</integer>
+				<integer>3</integer>
+				<integer>2</integer>
+				<integer>4</integer>
 			</array>
 			<array>
 				<integer>3</integer>
@@ -446,14 +623,195 @@
 	</dict>
 	<dict>
 		<key>enable</key>
-		<true/>
+		<false/>
+		<key>balls_select</key>
+		<array>
+			<integer>4</integer>
+			<integer>1</integer>
+			<integer>5</integer>
+			<integer>3</integer>
+			<integer>8</integer>
+		</array>
+		<key>balls</key>
+		<array>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.2</string>
+				</dict>
+				<key>number</key>
+				<integer>4</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.8</string>
+				</dict>
+				<key>number</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.1</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.9</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>lines</key>
+		<array>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+			</array>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>4</integer>
+				<integer>2</integer>
+			</array>
+		</array>
+	</dict>
+	<dict>
+		<key>enable</key>
+		<false/>
 		<key>balls_select</key>
 		<array>
 			<integer>1</integer>
 			<integer>3</integer>
 			<integer>5</integer>
-			<integer>7</integer>
+			<integer>2</integer>
 			<integer>8</integer>
+		</array>
+		<key>balls</key>
+		<array>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.15</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.35</string>
+				</dict>
+				<key>number</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.6</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.1</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.9</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>5</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.9</string>
+				</dict>
+				<key>number</key>
+				<integer>3</integer>
+			</dict>
+		</array>
+		<key>lines</key>
+		<array>
+			<array>
+				<integer>0</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+			</array>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>5</integer>
+			</array>
+		</array>
+	</dict>
+	<dict>
+		<key>enable</key>
+		<false/>
+		<key>balls_select</key>
+		<array>
+			<integer>1</integer>
+			<integer>3</integer>
+			<integer>5</integer>
+			<integer>4</integer>
+			<integer>8</integer>
+			<integer>9</integer>
 		</array>
 		<key>balls</key>
 		<array>
@@ -488,6 +846,117 @@
 					<string>0.8</string>
 				</dict>
 				<key>number</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.1</string>
+					<key>y</key>
+					<string>0.2</string>
+				</dict>
+				<key>number</key>
+				<integer>5</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.9</string>
+					<key>y</key>
+					<string>0.2</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.1</string>
+					<key>y</key>
+					<string>0.8</string>
+				</dict>
+				<key>number</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.9</string>
+					<key>y</key>
+					<string>0.8</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>lines</key>
+		<array>
+			<array>
+				<integer>0</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+			</array>
+			<array>
+				<integer>4</integer>
+				<integer>1</integer>
+				<integer>5</integer>
+			</array>
+			<array>
+				<integer>5</integer>
+				<integer>2</integer>
+				<integer>6</integer>
+			</array>
+		</array>
+	</dict>
+	<dict>
+		<key>enable</key>
+		<false/>
+		<key>balls_select</key>
+		<array>
+			<integer>1</integer>
+			<integer>3</integer>
+			<integer>5</integer>
+			<integer>4</integer>
+			<integer>8</integer>
+			<integer>2</integer>
+		</array>
+		<key>balls</key>
+		<array>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.2</string>
+				</dict>
+				<key>number</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.8</string>
+				</dict>
+				<key>number</key>
 				<integer>3</integer>
 			</dict>
 			<dict>
@@ -496,10 +965,10 @@
 					<key>x</key>
 					<string>0.1</string>
 					<key>y</key>
-					<string>0.5</string>
+					<string>0.2</string>
 				</dict>
 				<key>number</key>
-				<integer>1</integer>
+				<integer>3</integer>
 			</dict>
 			<dict>
 				<key>position</key>
@@ -507,36 +976,170 @@
 					<key>x</key>
 					<string>0.9</string>
 					<key>y</key>
-					<string>0.5</string>
+					<string>0.2</string>
 				</dict>
 				<key>number</key>
-				<integer>4</integer>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.1</string>
+					<key>y</key>
+					<string>0.8</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.9</string>
+					<key>y</key>
+					<string>0.8</string>
+				</dict>
+				<key>number</key>
+				<integer>2</integer>
 			</dict>
 		</array>
 		<key>lines</key>
 		<array>
 			<array>
 				<integer>0</integer>
+				<integer>3</integer>
+				<integer>4</integer>
 				<integer>1</integer>
+			</array>
+			<array>
+				<integer>6</integer>
+				<integer>1</integer>
+				<integer>5</integer>
+				<integer>2</integer>
+			</array>
+		</array>
+	</dict>
+	<dict>
+		<key>enable</key>
+		<false/>
+		<key>balls_select</key>
+		<array>
+			<integer>1</integer>
+			<integer>3</integer>
+			<integer>5</integer>
+			<integer>7</integer>
+			<integer>4</integer>
+		</array>
+		<key>balls</key>
+		<array>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.2</string>
+					<key>y</key>
+					<string>0.2</string>
+				</dict>
+				<key>number</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.2</string>
+					<key>y</key>
+					<string>0.8</string>
+				</dict>
+				<key>number</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.2</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.8</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>3</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.8</string>
+					<key>y</key>
+					<string>0.2</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.8</string>
+					<key>y</key>
+					<string>0.8</string>
+				</dict>
+				<key>number</key>
+				<integer>2</integer>
+			</dict>
+		</array>
+		<key>lines</key>
+		<array>
+			<array>
+				<integer>0</integer>
+				<integer>3</integer>
 				<integer>2</integer>
 			</array>
 			<array>
 				<integer>3</integer>
 				<integer>1</integer>
+				<integer>4</integer>
+			</array>
+			<array>
+				<integer>6</integer>
+				<integer>5</integer>
 				<integer>4</integer>
 			</array>
 		</array>
 	</dict>
 	<dict>
 		<key>enable</key>
-		<true/>
+		<false/>
 		<key>balls_select</key>
 		<array>
 			<integer>1</integer>
 			<integer>3</integer>
 			<integer>5</integer>
 			<integer>7</integer>
-			<integer>8</integer>
+			<integer>2</integer>
 		</array>
 		<key>balls</key>
 		<array>
@@ -544,7 +1147,7 @@
 				<key>position</key>
 				<dict>
 					<key>x</key>
-					<string>0.5</string>
+					<string>0.2</string>
 					<key>y</key>
 					<string>0.2</string>
 				</dict>
@@ -566,9 +1169,31 @@
 				<key>position</key>
 				<dict>
 					<key>x</key>
-					<string>0.5</string>
+					<string>0.2</string>
 					<key>y</key>
 					<string>0.8</string>
+				</dict>
+				<key>number</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.2</string>
+					<key>y</key>
+					<string>0.5</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.8</string>
+					<key>y</key>
+					<string>0.5</string>
 				</dict>
 				<key>number</key>
 				<integer>3</integer>
@@ -577,42 +1202,45 @@
 				<key>position</key>
 				<dict>
 					<key>x</key>
-					<string>0.1</string>
+					<string>0.8</string>
 					<key>y</key>
-					<string>0.5</string>
+					<string>0.2</string>
 				</dict>
 				<key>number</key>
-				<integer>1</integer>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>position</key>
 				<dict>
 					<key>x</key>
-					<string>0.9</string>
+					<string>0.8</string>
 					<key>y</key>
-					<string>0.5</string>
+					<string>0.8</string>
 				</dict>
 				<key>number</key>
-				<integer>4</integer>
+				<integer>2</integer>
 			</dict>
 		</array>
 		<key>lines</key>
 		<array>
 			<array>
 				<integer>0</integer>
-				<integer>1</integer>
-				<integer>2</integer>
-			</array>
-			<array>
 				<integer>3</integer>
 				<integer>1</integer>
 				<integer>4</integer>
+			</array>
+			<array>
+				<integer>5</integer>
+				<integer>1</integer>
+				<integer>4</integer>
+				<integer>6</integer>
+				<integer>2</integer>
 			</array>
 		</array>
 	</dict>
 	<dict>
 		<key>enable</key>
-		<true/>
+		<false/>
 		<key>balls_select</key>
 		<array>
 			<integer>1</integer>
@@ -620,6 +1248,7 @@
 			<integer>5</integer>
 			<integer>7</integer>
 			<integer>8</integer>
+			<integer>2</integer>
 		</array>
 		<key>balls</key>
 		<array>
@@ -627,31 +1256,9 @@
 				<key>position</key>
 				<dict>
 					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
 					<string>0.2</string>
-				</dict>
-				<key>number</key>
-				<integer>2</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
 					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.8</string>
+					<string>0.3</string>
 				</dict>
 				<key>number</key>
 				<integer>3</integer>
@@ -660,23 +1267,89 @@
 				<key>position</key>
 				<dict>
 					<key>x</key>
-					<string>0.1</string>
-					<key>y</key>
 					<string>0.5</string>
+					<key>y</key>
+					<string>0.3</string>
 				</dict>
 				<key>number</key>
-				<integer>1</integer>
+				<integer>0</integer>
 			</dict>
 			<dict>
 				<key>position</key>
 				<dict>
 					<key>x</key>
-					<string>0.9</string>
+					<string>0.8</string>
 					<key>y</key>
+					<string>0.3</string>
+				</dict>
+				<key>number</key>
+				<integer>5</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.2</string>
+					<key>y</key>
+					<string>0.6</string>
+				</dict>
+				<key>number</key>
+				<integer>5</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
 					<string>0.5</string>
+					<key>y</key>
+					<string>0.6</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.8</string>
+					<key>y</key>
+					<string>0.6</string>
 				</dict>
 				<key>number</key>
 				<integer>4</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.5</string>
+					<key>y</key>
+					<string>0.05</string>
+				</dict>
+				<key>number</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.6</string>
+					<key>y</key>
+					<string>0.9</string>
+				</dict>
+				<key>number</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>position</key>
+				<dict>
+					<key>x</key>
+					<string>0.85</string>
+					<key>y</key>
+					<string>0.85</string>
+				</dict>
+				<key>number</key>
+				<integer>2</integer>
 			</dict>
 		</array>
 		<key>lines</key>
@@ -688,506 +1361,15 @@
 			</array>
 			<array>
 				<integer>3</integer>
-				<integer>1</integer>
+				<integer>5</integer>
 				<integer>4</integer>
 			</array>
-		</array>
-	</dict>
-	<dict>
-		<key>enable</key>
-		<true/>
-		<key>balls_select</key>
-		<array>
-			<integer>1</integer>
-			<integer>3</integer>
-			<integer>5</integer>
-			<integer>7</integer>
-			<integer>8</integer>
-		</array>
-		<key>balls</key>
-		<array>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.2</string>
-				</dict>
-				<key>number</key>
-				<integer>2</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.8</string>
-				</dict>
-				<key>number</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.1</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.9</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>4</integer>
-			</dict>
-		</array>
-		<key>lines</key>
-		<array>
 			<array>
-				<integer>0</integer>
 				<integer>1</integer>
-				<integer>2</integer>
-			</array>
-			<array>
-				<integer>3</integer>
-				<integer>1</integer>
+				<integer>6</integer>
 				<integer>4</integer>
-			</array>
-		</array>
-	</dict>
-	<dict>
-		<key>enable</key>
-		<true/>
-		<key>balls_select</key>
-		<array>
-			<integer>1</integer>
-			<integer>3</integer>
-			<integer>5</integer>
-			<integer>7</integer>
-			<integer>8</integer>
-		</array>
-		<key>balls</key>
-		<array>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.2</string>
-				</dict>
-				<key>number</key>
-				<integer>2</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.8</string>
-				</dict>
-				<key>number</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.1</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.9</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>4</integer>
-			</dict>
-		</array>
-		<key>lines</key>
-		<array>
-			<array>
-				<integer>0</integer>
-				<integer>1</integer>
-				<integer>2</integer>
-			</array>
-			<array>
-				<integer>3</integer>
-				<integer>1</integer>
-				<integer>4</integer>
-			</array>
-		</array>
-	</dict>
-	<dict>
-		<key>enable</key>
-		<true/>
-		<key>balls_select</key>
-		<array>
-			<integer>1</integer>
-			<integer>3</integer>
-			<integer>5</integer>
-			<integer>7</integer>
-			<integer>8</integer>
-		</array>
-		<key>balls</key>
-		<array>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.2</string>
-				</dict>
-				<key>number</key>
-				<integer>2</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.8</string>
-				</dict>
-				<key>number</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.1</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.9</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>4</integer>
-			</dict>
-		</array>
-		<key>lines</key>
-		<array>
-			<array>
-				<integer>0</integer>
-				<integer>1</integer>
-				<integer>2</integer>
-			</array>
-			<array>
-				<integer>3</integer>
-				<integer>1</integer>
-				<integer>4</integer>
-			</array>
-		</array>
-	</dict>
-	<dict>
-		<key>enable</key>
-		<true/>
-		<key>balls_select</key>
-		<array>
-			<integer>1</integer>
-			<integer>3</integer>
-			<integer>5</integer>
-			<integer>7</integer>
-			<integer>8</integer>
-		</array>
-		<key>balls</key>
-		<array>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.2</string>
-				</dict>
-				<key>number</key>
-				<integer>2</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.8</string>
-				</dict>
-				<key>number</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.1</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.9</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>4</integer>
-			</dict>
-		</array>
-		<key>lines</key>
-		<array>
-			<array>
-				<integer>0</integer>
-				<integer>1</integer>
-				<integer>2</integer>
-			</array>
-			<array>
-				<integer>3</integer>
-				<integer>1</integer>
-				<integer>4</integer>
-			</array>
-		</array>
-	</dict>
-	<dict>
-		<key>enable</key>
-		<true/>
-		<key>balls_select</key>
-		<array>
-			<integer>1</integer>
-			<integer>3</integer>
-			<integer>5</integer>
-			<integer>7</integer>
-			<integer>8</integer>
-		</array>
-		<key>balls</key>
-		<array>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.2</string>
-				</dict>
-				<key>number</key>
-				<integer>2</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.8</string>
-				</dict>
-				<key>number</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.1</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.9</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>4</integer>
-			</dict>
-		</array>
-		<key>lines</key>
-		<array>
-			<array>
-				<integer>0</integer>
-				<integer>1</integer>
-				<integer>2</integer>
-			</array>
-			<array>
-				<integer>3</integer>
-				<integer>1</integer>
-				<integer>4</integer>
-			</array>
-		</array>
-	</dict>
-	<dict>
-		<key>enable</key>
-		<true/>
-		<key>balls_select</key>
-		<array>
-			<integer>1</integer>
-			<integer>3</integer>
-			<integer>5</integer>
-			<integer>7</integer>
-			<integer>8</integer>
-		</array>
-		<key>balls</key>
-		<array>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.2</string>
-				</dict>
-				<key>number</key>
-				<integer>2</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.5</string>
-					<key>y</key>
-					<string>0.8</string>
-				</dict>
-				<key>number</key>
-				<integer>3</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.1</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>position</key>
-				<dict>
-					<key>x</key>
-					<string>0.9</string>
-					<key>y</key>
-					<string>0.5</string>
-				</dict>
-				<key>number</key>
-				<integer>4</integer>
-			</dict>
-		</array>
-		<key>lines</key>
-		<array>
-			<array>
-				<integer>0</integer>
-				<integer>1</integer>
-				<integer>2</integer>
-			</array>
-			<array>
-				<integer>3</integer>
-				<integer>1</integer>
-				<integer>4</integer>
+				<integer>7</integer>
+				<integer>8</integer>
 			</array>
 		</array>
 	</dict>

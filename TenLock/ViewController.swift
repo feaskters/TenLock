@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let tip = UILabel.init(frame: CGRect.init(x: 40, y: 20, width: UIScreen.main.bounds.width - 120, height: 200))
         tip.numberOfLines = 0
         tip.font = UIFont.init(name: "Marker Felt", size: 18)
-        tip.text = "玩法介绍:\n\t拖动合适的数字，放入框中，使得每一根线上连接的数字之和为10。"
+        tip.text = "How to play: \n\t Drag the appropriate number into the box so that the sum of the numbers connected on each line is 10."
         tip.textColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         view.addSubview(tip)
         
