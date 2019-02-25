@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +17,55 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="gKl-mu-17N">
+                                <rect key="frame" x="127.5" y="167" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="kNP-4a-VkH"/>
+                                    <constraint firstAttribute="height" constant="120" id="rgA-79-O2l"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TenLock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KR-IJ-3Fj">
+                                <rect key="frame" x="129.5" y="362" width="116" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.47450980390000003" blue="0.66666666669999997" alpha="0.94804152399999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="6MP-1K-o6K">
+                                <rect key="frame" x="325" y="617" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2DC-pB-jVG"/>
+                                    <constraint firstAttribute="width" constant="50" id="LyW-xc-GR4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball2" translatesAutoresizingMaskIntoConstraints="NO" id="Esc-Ry-neo">
+                                <rect key="frame" x="267" y="543" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="F1c-PZ-bo7"/>
+                                    <constraint firstAttribute="width" constant="50" id="sKi-23-Ikb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball3" translatesAutoresizingMaskIntoConstraints="NO" id="hoH-6u-HlY">
+                                <rect key="frame" x="24" y="50" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="h1k-7C-hWB"/>
+                                    <constraint firstAttribute="width" constant="50" id="r9d-43-zni"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gKl-mu-17N" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2Cc-Iy-Ni5"/>
+                            <constraint firstItem="3KR-IJ-3Fj" firstAttribute="top" secondItem="gKl-mu-17N" secondAttribute="bottom" constant="75" id="4UU-4s-eYY"/>
+                            <constraint firstItem="3KR-IJ-3Fj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="WvS-gp-nNW"/>
+                            <constraint firstItem="hoH-6u-HlY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="bhF-dm-T9K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6MP-1K-o6K" secondAttribute="trailing" id="fZN-f5-PeC"/>
+                            <constraint firstItem="hoH-6u-HlY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="nXG-qa-4Kw"/>
+                            <constraint firstItem="6MP-1K-o6K" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qiU-EN-UUf"/>
+                            <constraint firstItem="gKl-mu-17N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="u7P-fs-9X7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Esc-Ry-neo" secondAttribute="bottom" constant="74" id="x7g-kg-a0q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Esc-Ry-neo" secondAttribute="trailing" constant="58" id="zhX-S2-NB1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +74,10 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ball1" width="35" height="35"/>
+        <image name="ball2" width="35" height="35"/>
+        <image name="ball3" width="35" height="35"/>
+        <image name="icon" width="512" height="512"/>
+    </resources>
 </document>
