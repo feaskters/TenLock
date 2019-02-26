@@ -21,7 +21,11 @@ class GameOverView: UIView {
             let image = UIImage.init(named: "success" + String(i))
             self.resultArray.append(image!)
         }
-        self.resultLabel.text = "success"
+        if getCurrentLanguage() == "cn" {
+            self.resultLabel.text = "成功"
+        }else{
+            self.resultLabel.text = "success"
+        }
         self.resultLabel.textColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
         self.resultIcon.image = UIImage.init(named: "laugth")
         resultShow()
@@ -33,10 +37,32 @@ class GameOverView: UIView {
             let image = UIImage.init(named: "fail" + String(i))
             self.resultArray.append(image!)
         }
-        self.resultLabel.text = "fail"
+        if getCurrentLanguage() == "cn" {
+            self.resultLabel.text = "失败"
+        }else{
+            self.resultLabel.text = "success"
+        }
         self.resultLabel.textColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
         self.resultIcon.image = UIImage.init(named: "calm")
         resultShow()
+    }
+    
+    //获取系统语言
+    func getCurrentLanguage() -> String {
+        //        let defs = UserDefaults.standard
+        //        let languages = defs.object(forKey: "AppleLanguages")
+        //        let preferredLang = (languages! as AnyObject).object(0)
+        let preferredLang = Bundle.main.preferredLocalizations.first! as NSString
+        //        let preferredLang = (languages! as AnyObject).object(0)
+        
+        switch String(describing: preferredLang) {
+        case "en-US", "en-CN":
+            return "en"//英文
+        case "zh-Hans-US","zh-Hans-CN","zh-Hant-CN","zh-TW","zh-HK","zh-Hans":
+            return "cn"//中文
+        default:
+            return "en"
+        }
     }
     
     //显示结果

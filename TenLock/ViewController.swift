@@ -31,12 +31,34 @@ class ViewController: UIViewController {
         let tip = UILabel.init(frame: CGRect.init(x: 40, y: 20, width: UIScreen.main.bounds.width - 120, height: 200))
         tip.numberOfLines = 0
         tip.font = UIFont.init(name: "Marker Felt", size: 18)
-        tip.text = "How to play: \n\t Drag the appropriate number into the box so that the sum of the numbers connected on each line is 10."
+        if getCurrentLanguage() == "cn"{
+            tip.text = "玩法介绍: \n\t 将相应的数字拖到框中，使得每条线上连接的数字之和为10。"
+        }else{
+            tip.text = "How to play: \n\t Drag the appropriate number into the box so that the sum of the numbers connected on each line is 10."
+        }
         tip.textColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         view.addSubview(tip)
         
         return view
     }()
+    
+    //获取系统语言
+    func getCurrentLanguage() -> String {
+        //        let defs = UserDefaults.standard
+        //        let languages = defs.object(forKey: "AppleLanguages")
+        //        let preferredLang = (languages! as AnyObject).object(0)
+        let preferredLang = Bundle.main.preferredLocalizations.first! as NSString
+        //        let preferredLang = (languages! as AnyObject).object(0)
+        
+        switch String(describing: preferredLang) {
+        case "en-US", "en-CN":
+            return "en"//英文
+        case "zh-Hans-US","zh-Hans-CN","zh-Hant-CN","zh-TW","zh-HK","zh-Hans":
+            return "cn"//中文
+        default:
+            return "en"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

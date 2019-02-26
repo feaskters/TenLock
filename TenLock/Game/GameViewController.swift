@@ -23,7 +23,29 @@ class GameViewController: UIViewController,BallProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title_label.text = "Level " + (level ?? "")
+        if getCurrentLanguage() == "cn"{
+            self.title_label.text = "等级 " + (level ?? "")
+        }else{
+            self.title_label.text = "Level " + (level ?? "")
+        }
+    }
+    
+    //获取系统语言
+    func getCurrentLanguage() -> String {
+        //        let defs = UserDefaults.standard
+        //        let languages = defs.object(forKey: "AppleLanguages")
+        //        let preferredLang = (languages! as AnyObject).object(0)
+        let preferredLang = Bundle.main.preferredLocalizations.first! as NSString
+        //        let preferredLang = (languages! as AnyObject).object(0)
+        
+        switch String(describing: preferredLang) {
+        case "en-US", "en-CN":
+            return "en"//英文
+        case "zh-Hans-US","zh-Hans-CN","zh-Hant-CN","zh-TW","zh-HK","zh-Hans":
+            return "cn"//中文
+        default:
+            return "en"
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -25,7 +25,7 @@ class GameSelectorViewController: UIViewController , CheckpointButtonProtocol {
             let space : CGFloat = (sc_width - btn_width * 3) / 4 //按钮间距
             let count = Checkpoints.shared().checkPointsArray.count //按钮数量
             //设置scrollview的contentsize
-            self.checkpointScrollView.contentSize = CGSize.init(width: self.checkpointScrollView.bounds.width , height: CGFloat(count) * (btn_width + space) / 3)
+            self.checkpointScrollView.contentSize = CGSize.init(width: self.checkpointScrollView.bounds.width , height: CGFloat((count + 2)/3 ) * (btn_width + space))
             //添加按钮
             for i in 0...count - 1  {
                 //初始化按钮

@@ -20,9 +20,10 @@
 		F735F841221D4351006A0F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F735F840221D4351006A0F76 /* Assets.xcassets */; };
 		F735F844221D4351006A0F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F735F842221D4351006A0F76 /* LaunchScreen.storyboard */; };
 		F735F84E221D4EB1006A0F76 /* GameSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735F84C221D4EB1006A0F76 /* GameSelectorViewController.swift */; };
-		F735F84F221D4EB1006A0F76 /* GameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735F84D221D4EB1006A0F76 /* GameSelectorViewController.xib */; };
 		F735F851221D5359006A0F76 /* CheckPointButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F735F850221D5359006A0F76 /* CheckPointButton.swift */; };
 		F74484D1221FCF0400062BDB /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74484D0221FCF0400062BDB /* GameOverView.swift */; };
+		F75B7329222515FA00FDBE0F /* GameSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75B732B222515FA00FDBE0F /* GameSelectorViewController.xib */; };
+		F75B73342225193700FDBE0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F75B73362225193700FDBE0F /* InfoPlist.strings */; };
 		F7E5E62D221EA2E8007E1DBB /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E5E62C221EA2E8007E1DBB /* BallView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,9 +46,14 @@
 		F735F843221D4351006A0F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F735F845221D4351006A0F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F735F84C221D4EB1006A0F76 /* GameSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectorViewController.swift; sourceTree = "<group>"; };
-		F735F84D221D4EB1006A0F76 /* GameSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameSelectorViewController.xib; sourceTree = "<group>"; };
 		F735F850221D5359006A0F76 /* CheckPointButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPointButton.swift; sourceTree = "<group>"; };
 		F74484D0221FCF0400062BDB /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		F75B7327222515DA00FDBE0F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		F75B732A222515FA00FDBE0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GameSelectorViewController.xib; sourceTree = "<group>"; };
+		F75B732F2225185C00FDBE0F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/GameSelectorViewController.strings"; sourceTree = "<group>"; };
+		F75B73312225188300FDBE0F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F75B73352225193700FDBE0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F75B73372225193A00FDBE0F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F7E5E62C221EA2E8007E1DBB /* BallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +122,7 @@
 				F735F840221D4351006A0F76 /* Assets.xcassets */,
 				F735F842221D4351006A0F76 /* LaunchScreen.storyboard */,
 				F735F845221D4351006A0F76 /* Info.plist */,
+				F75B73362225193700FDBE0F /* InfoPlist.strings */,
 			);
 			path = TenLock;
 			sourceTree = "<group>";
@@ -124,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				F735F84C221D4EB1006A0F76 /* GameSelectorViewController.swift */,
-				F735F84D221D4EB1006A0F76 /* GameSelectorViewController.xib */,
+				F75B732B222515FA00FDBE0F /* GameSelectorViewController.xib */,
 				F735F850221D5359006A0F76 /* CheckPointButton.swift */,
 			);
 			path = GameSelector;
@@ -173,6 +180,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = F735F82D221D434F006A0F76;
 			productRefGroup = F735F837221D434F006A0F76 /* Products */;
@@ -190,10 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F735F844221D4351006A0F76 /* LaunchScreen.storyboard in Resources */,
-				F735F84F221D4EB1006A0F76 /* GameSelectorViewController.xib in Resources */,
+				F75B7329222515FA00FDBE0F /* GameSelectorViewController.xib in Resources */,
 				F735F841221D4351006A0F76 /* Assets.xcassets in Resources */,
 				F735F83F221D434F006A0F76 /* Main.storyboard in Resources */,
 				F71EB3FE221E78CD00EE8878 /* GameViewController.xib in Resources */,
+				F75B73342225193700FDBE0F /* InfoPlist.strings in Resources */,
 				F71EB3EC221E3FEB00EE8878 /* button_click.mp3 in Resources */,
 				F71EB400221E835E00EE8878 /* CheckPoints.plist in Resources */,
 				F71EB3F4221E4DAC00EE8878 /* BGM.mp3 in Resources */,
@@ -226,6 +235,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F735F83E221D434F006A0F76 /* Base */,
+				F75B7327222515DA00FDBE0F /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -234,8 +244,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				F735F843221D4351006A0F76 /* Base */,
+				F75B73312225188300FDBE0F /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F75B732B222515FA00FDBE0F /* GameSelectorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F75B732A222515FA00FDBE0F /* Base */,
+				F75B732F2225185C00FDBE0F /* zh-Hans */,
+			);
+			name = GameSelectorViewController.xib;
+			sourceTree = "<group>";
+		};
+		F75B73362225193700FDBE0F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F75B73352225193700FDBE0F /* en */,
+				F75B73372225193A00FDBE0F /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -245,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -306,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
