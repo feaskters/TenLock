@@ -12,6 +12,26 @@ IOS项目-十之锁
 7. swift单例的使用
 8. uiview的拖动事件
 9. swift帧动画
+10. 获取当前view的viewcontroller
+    ```objc
+    //获取viewcontroller
+    func parentViewController() -> UIViewController? {
+        
+        var n = self.next
+        
+        while n != nil {
+            
+            if (n is UIViewController) {
+                
+                return n as? UIViewController
+            }
+            
+            n = n?.next
+        }
+        
+        return nil
+    }
+    ```
 
 ## 所用资源
 1. 来自[爱给网](http://www.aigei.com/)的图片和音频
